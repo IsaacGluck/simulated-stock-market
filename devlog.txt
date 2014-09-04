@@ -1,0 +1,29 @@
+5/26/13 Coby submitted the project idea and repo.
+
+5/27/13 Green light on the project idea. Also, Isaac found the Yahoo finance api and JFreeChart. Isaac implemented the Yahoo API to retrieve CSV files with wanted data.
+
+5/28/14 Isaac added the base frame to hold the project. Next we must add stuff to the frame container.
+
+5/28/14 Coby updated running median to function for doubles. This will enable us to store data on past stock quotes. Coby researched the possibility of pulling historical prices through the yahoo finance api, beyond simple opens and closes for the last day. Coby tested the response speed of the yahoo api to various data calls
+
+5/29/14 Isaac worked on proxying while on school server, to make Yahoo finance api work in school. He figured out how to access the api through the school server but needs to make it user friednly.
+Coby continued working with the movement of bid ask prices. He made it work so that higher volatility leads to higher price fluctuations and so that a positive or negative market sentiment will lead to likely up or down movements for a stock's price. Next is to work with betas and or moving averages. Additionally, a template stock class should be made soon. Coby added use of beta and market strength between -1 and 1 (instead of boolean) to the price movement
+
+5/30/14 Isaac created the base panels for the Home Screen and the Stock viewing screen. Next we will format and fill these panels. 
+Coby began work on a User.java class that contains data on a user's portfolio
+
+5/31/14 Coby created worked with User.java to make it add a new ammount of a certain stock types to the portfolio in a sorted manner either based on ticker name or on the quantity of shares owned. The sort is done using a modified version of quick sort.
+Isaac set up the outline layout for the pages and researched a swing graphing library: jmathplots from micro labs. He is having trouble setting the system classpath to be able to import the seperate library.
+
+6/1/14 Isaac successfully figured out the difficulty with the classpath and will put that in the readme. He also successfully imported the graph to the layout. Next we will need to connect the screens with actionlisteners and have getNews(); and getData(); methods to connect the front and back ends.
+Coby created Market.java and began adding various ways of sorting all the stocks in the market so lists like "hottest stocks" of a given length could be returned. He also added a percent change variable to stocks that look at the last 300 prices, eliminating the oldest form the queue storing them.
+
+6/2/14 Coby created News.java to store news items, began thinking about how to most efficiently implement tags on the news items reflecting what stocks they effect.
+
+6/4/14 Coby reorganized Market's methods based on what they do, and created a loop for Market that can be run from outside the class, which every 5 seconds updates prices in the market and runs market's necessary functions
+
+6/12/14 After a brief hiatus due to finals and final projects work has began again. Isaac added action listeners to all the buttons and reorganized the file structure to allow integration between the front and back ends. In that vein, Isaac connected the first 3 test stocks to StockScreen and MainFrame to get their buttons, action listeners and display functionality working. Next step is implementing this for all 10 stocks and further connecting the Market with the display.
+
+6/14/14 Coby continued integration of the StockScreen and later of the HomeScreen with the rest of the stocks, and also connected buying and selling of stocks to a user's profile.
+
+6/15 Together, Coby and Isaac integrated the GUI fully with the stock movements, making printing of stats and of graphs work. They tested for flaws in the movement of stocks, used the API for initial prices. They added more News items and modified the way the News effect would be accounted for, replacing a simple "good vs. bad" with more dynamic double values. They added certain features to the GUI, like sell all stocks and the printing of the Goldberg Saac's Index. And then they went to sleep content :)
