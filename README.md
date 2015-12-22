@@ -16,9 +16,9 @@ Goldberg Saacs Stock-Simulator
 1. Running with -cp or -classpath (On windows use ; instead of : for the -cp)
 	1. In a new terminal, go to the directory where you downloaded the project
 	2. Compile with: 
-		```
-		javac -cp path/to/project/pd89_Goldberg-Saacs_CobyG-IsaacG/lib/jmathplot.jar:. MainFrame.java
-		```
+	```
+	javac -cp path/to/project/pd89_Goldberg-Saacs_CobyG-IsaacG/lib/jmathplot.jar:. MainFrame.java
+	```
 	3. Run with: 
 		```
 		java -cp path/to/project/pd89_Goldberg-Saacs_CobyG-IsaacG/lib/jmathplot.jar:. MainFrame
